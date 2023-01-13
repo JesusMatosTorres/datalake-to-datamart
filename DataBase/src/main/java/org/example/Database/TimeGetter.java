@@ -1,6 +1,6 @@
 package org.example.Database;
 
-public interface timeGetter {
+public interface TimeGetter {
 
     Weather maxGetter();
 

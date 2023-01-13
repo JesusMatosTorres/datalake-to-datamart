@@ -2,6 +2,6 @@ package org.example.api;
 
 import java.util.ArrayList;
 
-public interface methods {
+public interface Methods {
     String filterDate(ArrayList<Weather> temperatures, String from, String to);
 }

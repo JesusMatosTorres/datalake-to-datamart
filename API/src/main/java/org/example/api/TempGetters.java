@@ -1,6 +1,6 @@
 package org.example.api;
 
-public interface tempGetters {
+public interface TempGetters {
 
     String minGetter(String from, String to);
 

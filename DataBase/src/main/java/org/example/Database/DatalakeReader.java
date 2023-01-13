@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class DatalakeReader implements timeGetter{
+public class DatalakeReader implements TimeGetter {
 
     ArrayList<Weather> weathers = new ArrayList<>();
 

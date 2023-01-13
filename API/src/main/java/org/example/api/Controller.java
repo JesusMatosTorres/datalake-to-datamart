@@ -3,7 +3,7 @@ package org.example.api;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class Controller implements tempGetters{
+public class Controller implements TempGetters {
 
     String minDataBase;
     String maxDataBase;
