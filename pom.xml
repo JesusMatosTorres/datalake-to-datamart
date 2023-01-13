@@ -11,6 +11,7 @@
     <modules>
         <module>Feeder</module>
         <module>API</module>
+        <module>DataBase</module>
     </modules>
 
     <properties>
@@ -34,6 +35,11 @@
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
             <version>2.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.39.3.0</version>
         </dependency>
     </dependencies>
 

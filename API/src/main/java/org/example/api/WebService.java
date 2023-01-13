@@ -1,22 +1,24 @@
 package org.example.api;
 
-import java.util.HashMap;
-import java.util.Map;
+
 import static spark.Spark.get;
 
 public class WebService {
-    private final Map<String, command> commands = new HashMap<>();
 
-    //public void start() {
-        //get("/v1/places/with-min-temperature", this::min);
-        //get("/v1/places/with-max-temperature", this::max);
-    //}
+    public void start() {
 
-    //private String min(Request request, Response response) {
-        //return commands.get("min").execute(parametersIn(request));
-    //}
+        get("/v1/places/with-min-temperature", (req, res) -> {
+            String from = req.queryParams("from");
+            String to = req.queryParams("to");
+            Controller controller = new Controller();
+            return controller.minGetter(from, to);
+        });
 
-    //private String max(Request request, Response response) {
-        //return commands.get("max").execute(parametersIn(request));
-    //}
+        get("/v1/places/with-max-temperature", (req, res) -> {
+            String from = req.queryParams("from");
+            String to = req.queryParams("to");
+            Controller controller = new Controller();
+            return controller.maxGetter(from, to);
+        });
+    }
 }

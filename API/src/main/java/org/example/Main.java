@@ -1,7 +1,10 @@
 package org.example;
 
+import org.example.api.WebService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        WebService webService = new WebService();
+        webService.start();
     }
 }
